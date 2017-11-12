@@ -10,14 +10,14 @@
 	<string>fixkeybag</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0507A79457408EC73D99FC8BBFFF2CEB693F36CA</key>
+		<key>77D3ACE60F7CAE48345F23D7A504F72F8B6699EE</key>
 		<string>https://github.com/NyanSatan/fixkeybag.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>fixkeybag.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0507A79457408EC73D99FC8BBFFF2CEB693F36CA</key>
+		<key>77D3ACE60F7CAE48345F23D7A504F72F8B6699EE</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0507A79457408EC73D99FC8BBFFF2CEB693F36CA</string>
+	<string>77D3ACE60F7CAE48345F23D7A504F72F8B6699EE</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0507A79457408EC73D99FC8BBFFF2CEB693F36CA</string>
+			<string>77D3ACE60F7CAE48345F23D7A504F72F8B6699EE</string>
 			<key>IDESourceControlWCCName</key>
 			<string>fixkeybag</string>
 		</dict>

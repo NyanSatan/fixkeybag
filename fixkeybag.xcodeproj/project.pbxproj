@@ -8,12 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		2C145E8B1E84FB3D00CF8219 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 2C145E8A1E84FB3D00CF8219 /* main.c */; };
+		30002EDD1FADDB2400248856 /* KeybagGeneration.c in Sources */ = {isa = PBXBuildFile; fileRef = 30002EDC1FADDB2400248856 /* KeybagGeneration.c */; };
+		30002EDF1FADDC7300248856 /* KeybagDowngrade.c in Sources */ = {isa = PBXBuildFile; fileRef = 30002EDE1FADDC7300248856 /* KeybagDowngrade.c */; };
+		30002EE21FADDC8F00248856 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30002EE11FADDC8F00248856 /* CoreFoundation.framework */; };
+		30002EFA1FADE3D700248856 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30002EF91FADE3D700248856 /* IOKit.framework */; };
+		309C37861FAF5E6A007F9100 /* AppleEffaceableStorage.c in Sources */ = {isa = PBXBuildFile; fileRef = 309C37771FAF5E6A007F9100 /* AppleEffaceableStorage.c */; };
+		309C37871FAF5E6A007F9100 /* key_wrap.c in Sources */ = {isa = PBXBuildFile; fileRef = 309C377A1FAF5E6A007F9100 /* key_wrap.c */; };
+		309C37881FAF5E6A007F9100 /* pbkdf2.c in Sources */ = {isa = PBXBuildFile; fileRef = 309C377C1FAF5E6A007F9100 /* pbkdf2.c */; };
+		309C37891FAF5E6A007F9100 /* rijndael.c in Sources */ = {isa = PBXBuildFile; fileRef = 309C377E1FAF5E6A007F9100 /* rijndael.c */; };
+		309C378A1FAF5E6A007F9100 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 309C37801FAF5E6A007F9100 /* sha1.c */; };
+		309C378B1FAF5E6A007F9100 /* IOAESAccelerator.c in Sources */ = {isa = PBXBuildFile; fileRef = 309C37821FAF5E6A007F9100 /* IOAESAccelerator.c */; };
+		309C378C1FAF5E6A007F9100 /* IOKit.c in Sources */ = {isa = PBXBuildFile; fileRef = 309C37841FAF5E6A007F9100 /* IOKit.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C145E861E84FB3D00CF8219 /* fixkeybag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fixkeybag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C145E8A1E84FB3D00CF8219 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		2C84EFCC1E852DBC004C31D0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30002EDC1FADDB2400248856 /* KeybagGeneration.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KeybagGeneration.c; sourceTree = "<group>"; };
+		30002EDE1FADDC7300248856 /* KeybagDowngrade.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = KeybagDowngrade.c; sourceTree = "<group>"; };
+		30002EE11FADDC8F00248856 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		30002EF91FADE3D700248856 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/IOKit.framework; sourceTree = DEVELOPER_DIR; };
+		30002EFD1FADE3F400248856 /* IOKitKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitKeys.h; sourceTree = "<group>"; };
+		30002EFE1FADE3F400248856 /* IOKitLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOKitLib.h; sourceTree = "<group>"; };
+		30002EFF1FADE3F400248856 /* iokitmig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iokitmig.h; sourceTree = "<group>"; };
+		30002F001FADE3F400248856 /* IOReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOReturn.h; sourceTree = "<group>"; };
+		30002F011FADE3F400248856 /* IOTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOTypes.h; sourceTree = "<group>"; };
+		30002F021FADE3F400248856 /* OSMessageNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMessageNotification.h; sourceTree = "<group>"; };
+		309C37771FAF5E6A007F9100 /* AppleEffaceableStorage.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = AppleEffaceableStorage.c; path = "iphone-dataprotection/AppleEffaceableStorage.c"; sourceTree = "<group>"; };
+		309C37781FAF5E6A007F9100 /* AppleEffaceableStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppleEffaceableStorage.h; path = "iphone-dataprotection/AppleEffaceableStorage.h"; sourceTree = "<group>"; };
+		309C377A1FAF5E6A007F9100 /* key_wrap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key_wrap.c; sourceTree = "<group>"; };
+		309C377B1FAF5E6A007F9100 /* key_wrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key_wrap.h; sourceTree = "<group>"; };
+		309C377C1FAF5E6A007F9100 /* pbkdf2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pbkdf2.c; sourceTree = "<group>"; };
+		309C377D1FAF5E6A007F9100 /* pbkdf2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pbkdf2.h; sourceTree = "<group>"; };
+		309C377E1FAF5E6A007F9100 /* rijndael.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rijndael.c; sourceTree = "<group>"; };
+		309C377F1FAF5E6A007F9100 /* rijndael.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rijndael.h; sourceTree = "<group>"; };
+		309C37801FAF5E6A007F9100 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		309C37811FAF5E6A007F9100 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		309C37821FAF5E6A007F9100 /* IOAESAccelerator.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = IOAESAccelerator.c; path = "iphone-dataprotection/IOAESAccelerator.c"; sourceTree = "<group>"; };
+		309C37831FAF5E6A007F9100 /* IOAESAccelerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOAESAccelerator.h; path = "iphone-dataprotection/IOAESAccelerator.h"; sourceTree = "<group>"; };
+		309C37841FAF5E6A007F9100 /* IOKit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = IOKit.c; path = "iphone-dataprotection/IOKit.c"; sourceTree = "<group>"; };
+		309C37851FAF5E6A007F9100 /* IOKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IOKit.h; path = "iphone-dataprotection/IOKit.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30002EE21FADDC8F00248856 /* CoreFoundation.framework in Frameworks */,
+				30002EFA1FADE3D700248856 /* IOKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,7 +67,9 @@
 		2C145E7D1E84FB3D00CF8219 = {
 			isa = PBXGroup;
 			children = (
+				30002EFB1FADE3F400248856 /* Headers */,
 				2C145E881E84FB3D00CF8219 /* fixkeybag */,
+				30002EE31FADDC9600248856 /* Frameworks */,
 				2C145E871E84FB3D00CF8219 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,8 +85,10 @@
 		2C145E881E84FB3D00CF8219 /* fixkeybag */ = {
 			isa = PBXGroup;
 			children = (
+				30002EE01FADDC7900248856 /* iphone-dataprotection */,
+				30002EDE1FADDC7300248856 /* KeybagDowngrade.c */,
+				30002EDC1FADDB2400248856 /* KeybagGeneration.c */,
 				2C145E8A1E84FB3D00CF8219 /* main.c */,
-				2C84EFCC1E852DBC004C31D0 /* Info.plist */,
 				2C145E891E84FB3D00CF8219 /* Supporting Files */,
 			);
 			path = fixkeybag;
@@ -56,8 +97,69 @@
 		2C145E891E84FB3D00CF8219 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2C84EFCC1E852DBC004C31D0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30002EE01FADDC7900248856 /* iphone-dataprotection */ = {
+			isa = PBXGroup;
+			children = (
+				309C37771FAF5E6A007F9100 /* AppleEffaceableStorage.c */,
+				309C37781FAF5E6A007F9100 /* AppleEffaceableStorage.h */,
+				309C37791FAF5E6A007F9100 /* bsdcrypto */,
+				309C37821FAF5E6A007F9100 /* IOAESAccelerator.c */,
+				309C37831FAF5E6A007F9100 /* IOAESAccelerator.h */,
+				309C37841FAF5E6A007F9100 /* IOKit.c */,
+				309C37851FAF5E6A007F9100 /* IOKit.h */,
+			);
+			name = "iphone-dataprotection";
+			sourceTree = "<group>";
+		};
+		30002EE31FADDC9600248856 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30002EF91FADE3D700248856 /* IOKit.framework */,
+				30002EE11FADDC8F00248856 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30002EFB1FADE3F400248856 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				30002EFC1FADE3F400248856 /* IOKit */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		30002EFC1FADE3F400248856 /* IOKit */ = {
+			isa = PBXGroup;
+			children = (
+				30002EFD1FADE3F400248856 /* IOKitKeys.h */,
+				30002EFE1FADE3F400248856 /* IOKitLib.h */,
+				30002EFF1FADE3F400248856 /* iokitmig.h */,
+				30002F001FADE3F400248856 /* IOReturn.h */,
+				30002F011FADE3F400248856 /* IOTypes.h */,
+				30002F021FADE3F400248856 /* OSMessageNotification.h */,
+			);
+			path = IOKit;
+			sourceTree = "<group>";
+		};
+		309C37791FAF5E6A007F9100 /* bsdcrypto */ = {
+			isa = PBXGroup;
+			children = (
+				309C377A1FAF5E6A007F9100 /* key_wrap.c */,
+				309C377B1FAF5E6A007F9100 /* key_wrap.h */,
+				309C377C1FAF5E6A007F9100 /* pbkdf2.c */,
+				309C377D1FAF5E6A007F9100 /* pbkdf2.h */,
+				309C377E1FAF5E6A007F9100 /* rijndael.c */,
+				309C377F1FAF5E6A007F9100 /* rijndael.h */,
+				309C37801FAF5E6A007F9100 /* sha1.c */,
+				309C37811FAF5E6A007F9100 /* sha1.h */,
+			);
+			name = bsdcrypto;
+			path = "iphone-dataprotection/bsdcrypto";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +230,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309C378C1FAF5E6A007F9100 /* IOKit.c in Sources */,
+				309C37881FAF5E6A007F9100 /* pbkdf2.c in Sources */,
+				309C37891FAF5E6A007F9100 /* rijndael.c in Sources */,
+				309C37871FAF5E6A007F9100 /* key_wrap.c in Sources */,
+				30002EDD1FADDB2400248856 /* KeybagGeneration.c in Sources */,
+				309C378A1FAF5E6A007F9100 /* sha1.c in Sources */,
 				2C145E8B1E84FB3D00CF8219 /* main.c in Sources */,
+				309C37861FAF5E6A007F9100 /* AppleEffaceableStorage.c in Sources */,
+				30002EDF1FADDC7300248856 /* KeybagDowngrade.c in Sources */,
+				309C378B1FAF5E6A007F9100 /* IOAESAccelerator.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,34 +339,50 @@
 		2C145E9E1E84FB3D00CF8219 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks",
+				);
 				INFOPLIST_FILE = fixkeybag/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nyansatan.fixkeybag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Headers/**";
 			};
 			name = Debug;
 		};
 		2C145E9F1E84FB3D00CF8219 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "-";
 				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(DEVELOPER_DIR)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks",
+				);
 				INFOPLIST_FILE = fixkeybag/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nyansatan.fixkeybag;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Headers/**";
 			};
 			name = Release;
 		};

@@ -7,56 +7,72 @@
 //
 
 #include <stdio.h>
-#include <stdbool.h>
-#include <fcntl.h>
 #include <unistd.h>
-#include <dlfcn.h>
+#include <stdbool.h>
+#include <strings.h>
 
-bool checkKeybagExistance() {
+
+bool checkKeybagExistance();
+void generateKeybag();
+void keybag_downgrade_to_v2(char *key_0x835_string);
+
+
+void usage(char *argv0) {
     
-    int fd = open("/private/var/keybags/systembag.kb", O_RDONLY, 0);
-    
-    if (fd > -1) {
-        
-        close(fd);
-        return true;
-        
-    } else {
-        close(fd);
-        return false;
-    }
-    
+    printf("usage: %s [-v2] [key 0x835]\n", argv0);
 }
 
-void generateKeybag() {
-    
-    printf("Generating keybag...\n");
-    
-    int (*MKBKeyBagCreateSystem)(int x, char* path);
-    
-    void *handle = dlopen("/System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag", RTLD_LAZY);
-    MKBKeyBagCreateSystem = dlsym(handle, "MKBKeyBagCreateSystem");
-    MKBKeyBagCreateSystem(0, "/private/var");
-    
-    if (checkKeybagExistance()) {
-        
-        printf("No worries, \"can't set the system bag\" message is OK\n");
-        
-    } else {
-        printf("Something went wrong...\n");
-    }
-}
-
-int main() {
+int main(int argc, char **argv) {
     
     if (getuid() == 0) {
         
-        if (!checkKeybagExistance()) {
-            generateKeybag();
-            
-        } else {
-            
-            printf("System keybag already exists, no need to create new\n");
+        switch (argc) {
+            case 1:
+                if (!checkKeybagExistance()) {
+                    generateKeybag();
+                    
+                } else {
+                    
+                    printf("System keybag already exists, no need to create new\n");
+                }
+
+                break;
+                
+            case 2:
+                
+                if (strcmp(argv[1], "-h") == 0) {
+                    
+                    usage(argv[0]);
+                    
+                }
+                
+                if (strcmp(argv[1], "-v2") == 0) {
+                    
+                    keybag_downgrade_to_v2(NULL);
+                    
+                } else {
+                    
+                    usage(argv[0]);
+                }
+
+                break;
+                
+            case 3:
+                
+                if (strcmp(argv[1], "-v2") == 0) {
+                    
+                    keybag_downgrade_to_v2(argv[2]);
+                    
+                } else {
+                    
+                    usage(argv[0]);
+                }
+                
+                break;
+                
+            default:
+                usage(argv[0]);
+                break;
         }
         
     } else {
